@@ -25,4 +25,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🤖 Automatically update profile README"
-          file_patterns: README.md
+          file_pattern: README.md
