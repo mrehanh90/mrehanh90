@@ -1,0 +1,28 @@
+name: Self-Generating Profile
+
+on:
+  schedule:
+    # Runs every day at midnight (UTC). Adjust cron schedule as needed.
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Allows you to trigger it manually anytime from the Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run generation script
+        run: python generate.py
+
+      - name: Commit and push changes if README updated
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Automatically update profile README"
+          file_patterns: README.md
