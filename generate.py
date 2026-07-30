@@ -19,7 +19,7 @@ Welcome to my self-generating GitHub profile. This README updates itself automat
 
 ### 📈 GitHub Metrics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mrehanh90&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mrehanh90&show_icons=true&theme=radical]https://github-readme-stats.vercel.app/api?username=mrehanh90&show_icons=true&theme=radical" alt="GitHub Stats" />
 </p>
 """
 
